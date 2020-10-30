@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <!-- comment inclure une autre page... à utiliser pour le .js, .db ? -->
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <title>Titre</title>
+
+        <!-- CSS intégré dans <head>-->
+<style type="text/css">
+	p, h1, em, *, h3 em, h3 + p, a[title], a[title="Cliquez ici"], a[title*="ici"],  
+	{
+	    color: blue;
+
+	}
+
+	@font-face {
+    font-family: 'MaSuperPolice';
+    src: url('MaSuperPolice.eot');
+	}
+
+	.ma_classe
+	{
+
+		font-size: small;
+		font-size: 0.8em;
+	    font-family: Impact, "Arial Black", Arial, Verdana, sans-serif;
+	    font-style: italic;
+	    font-weight: bold;
+
+	    text-decoration: blink, underline, line-through, overline;
+
+	    text-align: center;
+	    float: left;
+
+	    color: green;
+	    color: rgb(240,96,204);
+		background-color: black;
+
+	}
+
+	#mon_ancre{
+		color: gray;
+
+		opacity: 0.6;
+
+		background-color: rgba(255, 0, 0, 0.5); /* + opacité */
+		border: 3px blue dashed;
+		border-left: 2px solid black;
+    	border-right: 2px solid black;
+    	border-top  : 2px solid gray;
+    	border-bottom : 2px solid gray;
+
+    	border-radius: 10px;
+    	border-radius: 10px 5px 10px 5px; /* border haut gauche, haut droit, bas droit, bas gauche */
+    	border-radius: 20px / 10px; /* 	ajuster bords */
+
+    	box-shadow: 6px 6px 0px black; /* decalage horizontal, vertical, adoucissement, couleur */
+    	text-shadow: 2px 2px 4px black;
+
+    	width: 50%;
+    	min-width: 400px;
+
+    	padding: 12px; /* marge intérieure */
+    	margin: 2px 0 3px 1px;
+    	overflow: auto; /* overflow: visible, hidden, scroll, auto; */
+
+    	word-wrap: break-word;
+
+
+    	display: flex;
+    	flex-direction: column; /* ou row, row-reverse, column-reverse */
+    	flex-wrap: wrap; /* retour à la ligne, ou wrap-reverse */
+    	justify-content: space-around; /* flex-start, flex-end, center, space-between, space-around */
+    	height: 350px;
+    	align-items: center; /* stretch, flex-start, flex-end, center, baseline */
+    }
+
+    #conteneur
+		{
+		    display: flex;
+		}
+
+	.element
+		{
+		    margin: auto;
+		}
+
+.element:nth-child(2) /* On prend le deuxième bloc élément */
+{
+    align-self: flex-end; /* Seul ce bloc sera aligné à la fin */
+    order: 3;
+    flex: 1;
+}
+
+
+a
+{
+	text-decoration: none;
+}
+
+a:hover /* survol */
+{
+   text-decoration: underline;
+   color: green;
+}
+
+a:active /* clic */
+{
+    background-color: #FFCC66;
+}
+
+a:focus /* lien/champ de formulaire sélectionné */
+{
+    background-color: #FFCC66;
+}
+
+a:visited /* Quand le visiteur a déjà vu la page concernée */
+{
+    color: #AAA; /* Appliquer une couleur grise */
+}
+
+	body
+	{
+	    background-image: url("neige.png");
+	    background-attachment: fixed;
+    	background-repeat: no-repeat;
+    	background-position: top right;
+    	background: url("soleil.png") fixed no-repeat top right, url("neige.png") fixed;
+
+	}
+
+table
+{
+    border-collapse: collapse; /* Les bordures du tableau seront collées (plus joli) */
+}
+
+td, th /* Toutes les cellules des tableaux... */
+{
+    border: 1px solid black; /* auront une bordure de 1px */
+}
+
+caption
+{
+	caption-side: top; /* ou bottom */
+}
+
+</style>
+
+
+    </head>
+
+
+
+    <body>
+
+    	<header>
+   			 <!-- Placez ici le contenu de l'en-tête de votre page -->
+		</header>
+
+		
+		
+		<footer>
+ 		   <!-- Placez ici le contenu du pied de page -->
+		</footer>
+
+
+		<nav>
+		    <ul>
+		        <li><a href="index.html">Accueil</a></li>
+		        <li><a href="forum.html">Forum</a></li>
+		        <li><a href="contact.html">Contact</a></li>
+		    </ul>
+		</nav>
+
+		<section>
+		    <h1>Ma section de page</h1>
+		    <p>Bla bla bla bla</p>
+		</section>
+
+		<aside>
+		    <!-- Placez ici des informations complémentaires -->
+		</aside>
+
+		<article>
+		    <h1>Mon article</h1>
+		    <p>Bla bla bla bla</p>
+		</article>
+
+
+    	<h1>Titre super important</h1>
+
+    	<p class = "ma_classe">Bonjour et bienvenue sur mon site !</p>
+
+	    <ul>
+		    <li>Fraises</li>
+		    <li>Framboises</li>
+		    <li>Cerises</li>
+		</ul>
+		<br />
+		Vous souhaitez visiter <a href="https://openclassrooms.com" title="Vous ne le regretterez pas !" target="_blank">OpenClassrooms</a> ?<br />
+		Souhaitez-vous consulter <a href="page2.html">la page 2</a> ?</p>
+
+		<h2 id="mon_ancre">Titre</h2>
+		<a href="#mon_ancre">Aller vers l'ancre</a>
+		<a href="page2.html#ancre">Le tir à l'arc</a><br />
+
+		<p><a href="mailto:votrenom@bidule.com">Envoyez-moi un e-mail !</a></p>
+
+		<!-- Comment faire télécharger des fichiers, comme un zip des musiques... ? lien pour télécharger mindmap? --> 
+		<p><a href="monfichier.zip">Télécharger le fichier</a></p>
+		<!-- Inclure des images, comme les portraits d'un compositeur, par exemple, à partir d'une base de données -->
+		<img src="images/montagne.jpg" alt="Photo de montagne" title="C'est beau les Alpes quand même !" />
+
+		<figure>
+		    <img src="images/blocnotes.png" alt="Bloc-Notes" />
+		    <figcaption>Le logiciel Bloc-Notes</figcaption>
+		</figure>
+
+
+		<table>
+
+			<caption>Passagers du vol 377</caption>
+
+		<thead>
+			<tr>
+		       <th>Nom</th>
+		       <th>Âge</th>
+		       <th>Pays</th>
+		   </tr>
+		</thead>
+
+		<tfoot>
+			<tr>
+		       <th>Nom</th>
+		       <th>Âge</th>
+		       <th>Pays</th>
+		   </tr>
+		</tfoot>
+
+		<tbody>
+		   <tr>
+		       <td>33 ans</td>
+		       <td rowspan="2">Espagne</td>
+		   </tr>
+		   <tr>
+		       <td>Michelle</td>
+		       <td colspan="2">États-Unis</td>
+		   </tr>
+		</tbody>
+
+		</table>
+
+
+
+		<form method="post" action="traitement.php">
+   			<p>Texte à l'intérieur du formulaire</p>
+   			<p>
+   				<label for="pseudo">Votre pseudo</label> : 
+   				<input type="text" name="pseudo" id="pseudo" placeholder="Ex : Zozor" size="30" maxlength="10" value="Zozor" />
+
+   				<br />
+
+		       	<label for="pass">Votre mot de passe :</label>
+		       	<input type="password" name="pass" id="pass" />
+
+		       	<br />
+
+		       <textarea name="ameliorer" id="ameliorer" rows="10" cols="50">
+		       Améliorer ton site ?!
+		       Mais enfin ! Il est tellement génialissime qu'il n'est pas nécessaire de l'améliorer !
+		       </textarea>   
+    		</p>
+   			</p>
+		</form>
+
+    </body>
+</html>
+
+<!-- Ceci est un commentaire -->

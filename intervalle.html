@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<title>Jeu Intervalles</title>
+</head>
+<body>
+
+
+	<div class="question_audio">
+		<audio src="hype_home.mp3" controls></audio>
+	</div>
+
+	<div class="question">
+	Quel est cet intervalle? <br /> <br />
+	</div>
+
+	<div class="formulaire">
+		<form method="post" action="intervalle.php">
+   		<input type="text" name="intervalle_donne" id="intervalle_donne"  size="10" maxlength="10"/>	
+	</div>
+
+	
+
+	<div class="aide">
+	Aide-mémoire : correspondance entre les réponses possibles et les intervalles<br />
+	1 : unisson <br />
+	2m : seconde mineure (un demi-ton)<br />
+	2M : seconde majeure (un ton) (2 demi-tons)<br />
+	3m : tierce mineure (1 ton 1/2) (3 demi-tons)<br />
+	3M : tierce majeure (2 tons) (4 demi-tons)<br />
+	4j : quarte juste (2 tons 1/2) (5 demi-tons)<br />
+	4A: quarte augmentée (3 tons) (6 demi-tons)<br />
+	5j : quinte juste (3 tons 1/2) (7 demi-tons)<br />
+	5A/6m : quinte augmentée / sixte mineure (4 tons) (8 demi-tons)<br />
+	6M : sixte majeure (4 tons 1/2) (9 demi-tons)<br />
+	7m : septième mineure (5 tons) (10 demi-tons)<br />
+	7M : septième majeure (5 tons 1/2) (11 demi-tons)<br />
+	8j : octave juste (6 tons) (12 demi-tons)<br />
+	</div>
+<script type="text/javascript">
+var h = document.head; // La variable h contient l'objet head du DOM
+console.log(h);
+
+var b = document.body; // La variable b contient l'objet body du DOM
+console.log(b);
+</script>
+
+
+</body>
+</html>
